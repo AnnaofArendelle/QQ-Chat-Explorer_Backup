@@ -1,0 +1,42 @@
+1:I[42492,["/static/qce-v4-tool/_next/static/chunks/0604kmf8~v4di.js","/static/qce-v4-tool/_next/static/chunks/0lii8u-u7sah5.js","/static/qce-v4-tool/_next/static/chunks/13ydg6n1p4lt_.js"],"LoadingBoundaryProvider"]
+2:"$Sreact.fragment"
+4:I[33009,["/static/qce-v4-tool/_next/static/chunks/0604kmf8~v4di.js","/static/qce-v4-tool/_next/static/chunks/0lii8u-u7sah5.js","/static/qce-v4-tool/_next/static/chunks/13ydg6n1p4lt_.js"],"AuthProvider"]
+5:I[81323,["/static/qce-v4-tool/_next/static/chunks/0604kmf8~v4di.js","/static/qce-v4-tool/_next/static/chunks/0lii8u-u7sah5.js","/static/qce-v4-tool/_next/static/chunks/13ydg6n1p4lt_.js"],"LoadingProvider"]
+6:I[42492,["/static/qce-v4-tool/_next/static/chunks/0604kmf8~v4di.js","/static/qce-v4-tool/_next/static/chunks/0lii8u-u7sah5.js","/static/qce-v4-tool/_next/static/chunks/13ydg6n1p4lt_.js"],"default"]
+7:I[17954,["/static/qce-v4-tool/_next/static/chunks/0604kmf8~v4di.js","/static/qce-v4-tool/_next/static/chunks/0lii8u-u7sah5.js","/static/qce-v4-tool/_next/static/chunks/13ydg6n1p4lt_.js","/static/qce-v4-tool/_next/static/chunks/0._cuowy1v70c.js"],"default"]
+8:I[2285,["/static/qce-v4-tool/_next/static/chunks/0604kmf8~v4di.js","/static/qce-v4-tool/_next/static/chunks/0lii8u-u7sah5.js","/static/qce-v4-tool/_next/static/chunks/13ydg6n1p4lt_.js"],"default"]
+9:I[46892,["/static/qce-v4-tool/_next/static/chunks/0604kmf8~v4di.js","/static/qce-v4-tool/_next/static/chunks/0lii8u-u7sah5.js","/static/qce-v4-tool/_next/static/chunks/13ydg6n1p4lt_.js","/static/qce-v4-tool/_next/static/chunks/0dq6p5cs0g9hi.js"],"default"]
+a:I[60199,["/static/qce-v4-tool/_next/static/chunks/0604kmf8~v4di.js","/static/qce-v4-tool/_next/static/chunks/0lii8u-u7sah5.js","/static/qce-v4-tool/_next/static/chunks/13ydg6n1p4lt_.js"],"Toaster"]
+b:I[7120,["/static/qce-v4-tool/_next/static/chunks/0604kmf8~v4di.js","/static/qce-v4-tool/_next/static/chunks/0lii8u-u7sah5.js","/static/qce-v4-tool/_next/static/chunks/13ydg6n1p4lt_.js"],"Analytics"]
+:HL["/static/qce-v4-tool/_next/static/chunks/0nd8tj8p6vmuj.css","style"]
+:HL["/static/qce-v4-tool/_next/static/chunks/0-xbef3-6k0sm.css","style"]
+3:T559,
+              (function() {
+                try {
+                  var theme = localStorage.getItem('theme');
+                  if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                    document.documentElement.classList.add('dark');
+                  }
+                } catch (e) {}
+              })();
+              
+              // 修复浏览器翻译功能(Edge/Chrome等)导致的 React DOM 操作错误
+              // 当翻译功能修改DOM后，React尝试操作已被移除的节点会抛出错误
+              if (typeof Node !== 'undefined') {
+                var originalRemoveChild = Node.prototype.removeChild;
+                Node.prototype.removeChild = function(child) {
+                  if (child.parentNode !== this) {
+                    return child;
+                  }
+                  return originalRemoveChild.apply(this, arguments);
+                };
+                
+                var originalInsertBefore = Node.prototype.insertBefore;
+                Node.prototype.insertBefore = function(newNode, referenceNode) {
+                  if (referenceNode && referenceNode.parentNode !== this) {
+                    return newNode;
+                  }
+                  return originalInsertBefore.apply(this, arguments);
+                };
+              }
+            0:{"rsc":["$","$L1",null,{"loading":[null,[],[]],"children":["$","$2","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/static/qce-v4-tool/_next/static/chunks/0nd8tj8p6vmuj.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/static/qce-v4-tool/_next/static/chunks/0-xbef3-6k0sm.css","precedence":"next"}],["$","script","script-0",{"src":"/static/qce-v4-tool/_next/static/chunks/0604kmf8~v4di.js","async":true}],["$","script","script-1",{"src":"/static/qce-v4-tool/_next/static/chunks/0lii8u-u7sah5.js","async":true}],["$","script","script-2",{"src":"/static/qce-v4-tool/_next/static/chunks/13ydg6n1p4lt_.js","async":true}]],["$","html",null,{"lang":"zh-CN","translate":"no","suppressHydrationWarning":true,"children":[["$","head",null,{"children":["$","script",null,{"dangerouslySetInnerHTML":{"__html":"$3"}}]}],["$","body",null,{"className":"font-sans geistsans_d5a4f12f-module__YQWtCW__variable geistmono_157ca88a-module__nPO8xW__variable","suppressHydrationWarning":true,"children":[["$","$L4",null,{"children":["$","$L5",null,{"children":[["$","$L6",null,{"parallelRouterKey":"children","error":"$7","errorStyles":[],"errorScripts":[["$","script","script-0",{"src":"/static/qce-v4-tool/_next/static/chunks/0._cuowy1v70c.js","async":true}]],"template":["$","$L8",null,{}],"notFound":[["$","$L9",null,{}],[]]}],["$","$La",null,{"position":"bottom-right","theme":"macos"}]]}]}],["$","$Lb",null,{}]]}]]}]]}]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"Vj6tuNntG6del1sCnelX4"}

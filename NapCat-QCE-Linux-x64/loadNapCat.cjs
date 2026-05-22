@@ -1,0 +1,1 @@
+const path = require('path');const CurrentPath = process.env.NAPCAT_BOOTMAIN || path.dirname(__filename);(async () => {  await import('file://' + path.join(CurrentPath, './napcat.mjs'));})();
